@@ -13,44 +13,41 @@ Together, they create workflows that are greater than the sum of their parts.
 
 ## Requirements
 
-**This plugin requires all three dependencies:**
-1. `julie-code-intel` - Code intelligence server
-2. `sherpa-workflows` - Workflow guidance server
-3. `goldfish-memory` - Persistent memory server
+**This plugin requires all three MCP servers installed and configured:**
 
-Install all three before using this plugin.
+1. **[Julie](https://github.com/anortham/julie)** - Code intelligence server
+   Fast semantic search, symbol navigation, safe refactoring
+
+2. **[Sherpa](https://github.com/anortham/sherpa)** - Workflow guidance server
+   Systematic development phases with behavioral adoption
+
+3. **[Goldfish](https://github.com/anortham/goldfish)** - Persistent memory server
+   Checkpoint progress, recall context, manage plans
+
+**Install all three MCP servers first** by following the installation instructions in each repository above.
 
 ## Installation
 
-### Via Plugin Marketplace (Recommended)
-```
-/plugin install mcp-toolbox-workflows@your-marketplace
-```
+### Step 1: Install MCP Servers
 
-This will verify dependencies are installed.
+Install the three required MCP servers by following the instructions in each repository:
 
-### Manual Installation
+1. **[Julie Installation](https://github.com/anortham/julie#installation)** - Download binary or build from source
+2. **[Sherpa Installation](https://github.com/anortham/sherpa#installation)** - Bun + TypeScript setup
+3. **[Goldfish Installation](https://github.com/anortham/goldfish#installation)** - Bun + TypeScript setup
+
+Make sure all three are added to your Claude Desktop `claude_desktop_config.json` and working.
+
+### Step 2: Install This Plugin
+
 ```bash
-# Install dependencies first
-/plugin install julie-code-intel
-/plugin install sherpa-workflows
-/plugin install goldfish-memory
-
-# Then install workflows
-/plugin install mcp-toolbox-workflows
+# Clone this repository
+git clone https://github.com/anortham/mcp-toolbox-workflows.git
 ```
 
-Or add to `.claude/settings.json`:
-```json
-{
-  "plugins": [
-    "path/to/julie/.claude-plugin",
-    "path/to/sherpa/.claude-plugin",
-    "path/to/goldfish/.claude-plugin",
-    "path/to/mcp-toolbox-workflows/.claude-plugin"
-  ]
-}
-```
+Then install the plugin in Claude Code according to the [Claude Code plugin documentation](https://docs.claude.com/en/docs/claude-code/plugins).
+
+**That's it!** The composite skills will automatically activate when appropriate based on your task context.
 
 ## Composite Skills
 
