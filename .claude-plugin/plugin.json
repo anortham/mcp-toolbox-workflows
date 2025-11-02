@@ -1,0 +1,18 @@
+{
+  "name": "mcp-toolbox-workflows",
+  "version": "1.0.0",
+  "description": "Composite workflows that orchestrate Julie (code intelligence), Sherpa (workflow guidance), and Goldfish (persistent memory) for powerful development patterns. Includes TDD Powerhouse, Bug Detective, Smart Session Start, and more.",
+  "author": {
+    "name": "murphy"
+  },
+  "license": "MIT",
+  "keywords": [
+    "workflows",
+    "integration",
+    "tdd",
+    "debugging",
+    "refactoring",
+    "composite-skills"
+  ],
+  "skills": "./skills/"
+}
